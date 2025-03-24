@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="#ffffff">
+
+    <TextView
+            android:id="@+id/textViewWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Добро пожаловать!"
+            android:textSize="28sp"
+            android:textColor="#000000"
+            android:fontFamily="@font/nunito_bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="48dp"/>
+    <ImageView
+            android:id="@+id/imageViewWelcome"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/splash_ic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewWelcome" android:layout_marginTop="8dp"
+            app:layout_constraintHorizontal_bias="0.494"/>
+    <TextView
+            android:id="@+id/textViewWelcomeDescription"
+            android:layout_width="325dp"
+            android:layout_height="211dp"
+            android:text="Данное приложение посчитает ваш индекс массы тела, необходимое количество каллорий, а также составит индивидуальный план питания."
+            android:textSize="22sp"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:fontFamily="@font/nunito_regular"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewWelcome" android:layout_marginTop="32dp"/>
+    <Button
+            android:id="@+id/buttonGetStarted"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:text="Начать"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:backgroundTint="#4CAF50"
+            android:padding="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="56dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
