@@ -6,4 +6,6 @@
     <color name="warningText">#FFBF00</color>
     <color name="extraWarningText">#FF1100</color>
     <color name="infoText">#595959</color>
+    <color name="purple_500">#6200EE</color>
+
 </resources>

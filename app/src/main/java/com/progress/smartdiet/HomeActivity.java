@@ -9,6 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -24,6 +25,13 @@ public class HomeActivity extends AppCompatActivity {
         TextView recommendedCalories = findViewById(R.id.recommendedCalories);
 
         ImageView dietButton = findViewById(R.id.dietButton);
+        FloatingActionButton addFoodButton = findViewById(R.id.addFoodButton);
+
+        addFoodButton.setOnClickListener(view -> {
+            Intent intent = new Intent(HomeActivity.this, AddFoodActivity.class);
+            startActivity(intent);
+        });
+        
 
         dietButton.setOnClickListener(v -> {
             Intent intent = new Intent(HomeActivity.this, DietActivity.class);

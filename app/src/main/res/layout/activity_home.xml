@@ -60,8 +60,8 @@
                     android:textSize="20sp"
                     android:textStyle="bold"
                     app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="64dp"
-                    app:layout_constraintHorizontal_bias="0.497"/>
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="20dp"
+            />
             <TextView
                     android:id="@+id/imt"
                     android:layout_width="wrap_content"
@@ -86,6 +86,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/imt"
                     android:layout_marginTop="16dp"/>
+
             <TextView
                     android:id="@+id/recommendedCaloriesLabel"
                     android:layout_width="wrap_content"
@@ -97,8 +98,7 @@
                     app:layout_constraintTop_toBottomOf="@id/status"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    android:layout_marginTop="112dp"/>
-
+                    android:layout_marginTop="28dp"/>
             <TextView
                     android:id="@+id/recommendedCalories"
                     android:layout_width="wrap_content"
@@ -113,6 +113,31 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     android:layout_marginTop="16dp"
                     app:layout_constraintHorizontal_bias="0.5"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/addFoodButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="16dp"
+                    android:contentDescription="Добавить еду"
+                    android:src="@drawable/ic_add"
+                    android:backgroundTint="@color/purple_500"
+                    tools:ignore="MissingConstraints" app:layout_constraintTop_toBottomOf="@+id/recommendedCalories"
+                    app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="100dp" app:layout_constraintHorizontal_bias="0.5"/>
+            <TextView
+                    android:id="@+id/addFoodLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Добавить блюдо"
+                    android:textColor="@color/infoText"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/addFoodButton"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="28dp" app:layout_constraintHorizontal_bias="0.497"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>

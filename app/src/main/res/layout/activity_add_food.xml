@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".AddFoodActivity">
+
+    <AutoCompleteTextView
+            android:id="@+id/foodCategoryEditText"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:hint="Категория"
+            android:textColorHint="#707070"
+            android:textColor="@color/black"
+            android:inputType="none"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_marginTop="28dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"/>
+
+    <EditText
+            android:id="@+id/foodNameEditText"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:hint="Название еды"
+            android:textColorHint="#707070"
+            android:textColor="@color/black"
+            android:inputType="textCapSentences"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintTop_toBottomOf="@+id/foodCategoryEditText"
+            android:layout_marginTop="12dp"/>
+    <EditText
+            android:id="@+id/caloriesEditText"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:hint="Калории (ккал)"
+            android:textColorHint="#707070"
+            android:inputType="number"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/foodNameEditText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="12dp" app:layout_constraintHorizontal_bias="0.0"/>
+    <Button
+            android:id="@+id/saveFoodButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#736F6F"
+            android:textColor="@color/white"
+            android:text="Сохранить"
+            app:layout_constraintTop_toBottomOf="@id/caloriesEditText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="24dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
